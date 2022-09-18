@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=User
+comment1.params=
+comment1.target=User()
+comment2.params=friend_request_sent
+comment2.target=void\ sent_friend_request(java.util.ArrayList)
+comment3.params=friend_request_recieved\ onoma
+comment3.target=void\ reply_friend_request(java.util.ArrayList,\ java.lang.String)
+comment4.params=arrfriends
+comment4.target=void\ remove_friend(java.util.ArrayList)
+comment5.params=
+comment5.target=void\ post()
+numComments=6

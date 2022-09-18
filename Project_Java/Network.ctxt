@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Network
+comment1.params=
+comment1.target=java.util.ArrayList\ getfriends()
+comment2.params=
+comment2.target=java.util.ArrayList\ getusers()
+comment3.params=email\ onoma
+comment3.target=void\ add_user(java.lang.String,\ java.lang.String)
+comment4.params=users
+comment4.target=void\ remove_user(java.util.ArrayList)
+comment5.params=
+comment5.target=void\ add_friend()
+comment6.params=friends
+comment6.target=void\ show_friend(java.util.ArrayList)
+comment7.params=user\ friends
+comment7.target=boolean\ are_friends(java.util.ArrayList,\ java.util.ArrayList)
+comment8.params=friends1\ friends2
+comment8.target=void\ same_friends(java.util.ArrayList,\ java.util.ArrayList)
+numComments=9

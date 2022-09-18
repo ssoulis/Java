@@ -1,0 +1,115 @@
+ΟΝ/ΜΟ:ΣΠΥΡΟ ΣΟΥΛΙ
+ΑM: 1070263
+ETOΣ:4ο
+
+drop procedure IF EXISTS proc1;
+delimiter %
+ create procedure proc1( username1 varchar(12))
+ 	begin 
+ 	declare userproc varchar(12);
+ 	declare bid int;
+ 	select username into userproc  from user 
+ 	where username1=username;
+
+ 	DECLARE flag1 TINYINT;
+DECLARE bcursor CURSOR FOR
+SELECT username from user where userproc=recruiter.username ;
+DECLARE CONTINUE HANDLER FOR NOT FOUND
+SET flag1=1;
+
+set flag1=0;
+
+open bcursor;
+
+ repeat 
+ fetch bcursor into bid;
+ if (flag1=0)
+then 
+ 	print "einai recruiter";
+ 	select name,bio,sistatikes,certificates;
+ 	else
+ 	select name,surname,username from user 
+ 	where username=username1;
+ 	from recruiter
+ 	select exp_years,firm;
+
+ 	print "einai candidate";
+
+ 	end if ;
+
+ 	UNTIL(flag1=1)
+	END REPEAT;
+	
+	CLOSE bcursor;
+END$
+DELIMITER ;
+
+SHOW CREATE TABLE username;
+
+call proc1(vaggelis);
+call proc1(vaggelis12322);
+
+ta apotelesmata einai kena den moy vgazei tipota
+para mono mayrh o9onh alla deixnei na ekteleitai
+twra moy leei 
+
+ERROR 1064 (42000): You have an error in your SQL syntax;
+ check the manual that corresponds to your MySQL server 
+ version for the right syntax to use near
+  'select username into userproc  from user
+ where username1=username';
+
+
+
+DROP PROCEDURE IF EXISTS proc2;
+DELIMITER $
+CREATE PROCEDURE proc2(usernamer varchar(12))
+BEGIN
+declare usernamer1 varchar(12);
+ 	declare bid1 int;
+ 	select username into usernamer1  from recruiter
+ 	where usernamer=username;
+ 	DECLARE flag1 TINYINT;
+DECLARE bcursor CURSOR FOR
+SELECT username from recruiter where  ;
+DECLARE CONTINUE HANDLER FOR NOT FOUND
+SET flag1=1;
+
+set flag1=0;
+
+open bcursor;
+
+repeat 
+fetch bcursor into bid1;
+if (flag1=0)
+then 
+
+select name,surname  from user where username=usernamer1;
+select exp_years;
+if (table job != null )
+then 
+select position,salary from job where usernamer1=recruiter;
+else 
+print "den yparxei douleia";
+end if;
+end if;
+until (flag1=1)
+end repeat;
+close bcursor;
+end$
+delimiter ;
+call proc2(vaggelis);
+call proc2(vaggelis12322);
+
+
+kapoio styntax la8os uparxei 
+
+
+
+
+
+
+
+
+
+

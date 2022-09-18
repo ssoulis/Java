@@ -13,6 +13,6 @@ the purpose is to learn how to effectively program using Java.
 
 VERSION or DATE: WINTER 2019
 
-Some codes have comments while other do not, a lot of the projects are made as laboratory excercises and the file names will give you a hint on what the project is about.
+Some codes have comments while other do not, a lot of the projects are made as laboratory excercises and the file names will give you a hint on what the project is about.All of the have readme files to introduce you to the main subject
 
 THANK YOU FOR YOUR TIME!

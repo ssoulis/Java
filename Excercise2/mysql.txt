@@ -1,7 +1,3 @@
-ΟΝ/ΜΟ:ΣΠΥΡΟ ΣΟΥΛΙ
-ΑM: 1070263
-ETOΣ:4ο
-
 drop procedure IF EXISTS proc1;
 delimiter %
  create procedure proc1( username1 varchar(12))
@@ -102,7 +98,7 @@ call proc2(vaggelis);
 call proc2(vaggelis12322);
 
 
-kapoio styntax la8os uparxei 
+there might be a syntax problem
 
 
 
